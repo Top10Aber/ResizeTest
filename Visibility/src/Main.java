@@ -39,7 +39,7 @@ public class Main extends Application {
     btn.setOnAction(new EventHandler<ActionEvent>() {
         @Override
         public void handle(ActionEvent event) {  
-        	int size = 14; 
+        	int size = 12; 
         	lbl.setFont(new Font(size)); 
         }
       });
