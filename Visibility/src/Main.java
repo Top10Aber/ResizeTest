@@ -5,6 +5,7 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
@@ -20,6 +21,8 @@ public class Main extends Application {
     Button btn2 = new Button();
     Label lbl = new Label();
     
+    ToggleButton tog = new ToggleButton();
+    
     primaryStage.setTitle("Hello World!");
     
     lbl.setText("Test");
@@ -28,6 +31,10 @@ public class Main extends Application {
     lbl.setLayoutY(150);
     lbl.setText("true");
 
+    tog.setLayoutX(10);
+    tog.setLayoutY(10);
+    tog.setText("TEST");
+    
     btn.setLayoutX(100);
     btn.setLayoutY(100);
     btn.setText("smaller");
@@ -58,6 +65,7 @@ public class Main extends Application {
     root.getChildren().add(btn);
     root.getChildren().add(btn2);
     root.getChildren().add(lbl);
+    root.getChildren().add(tog);
     primaryStage.setScene(new Scene(root, 300, 250));
     primaryStage.show();
   }
