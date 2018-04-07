@@ -12,14 +12,14 @@ public class Main extends Application {
   public static void main(String[] args) {
     Application.launch(args);
   }
-
+  
   @Override
-  public void start(Stage primaryStage) {
+  public void start (Stage primaryStage) {
 	  
     Button btn = new Button();
     Button btn2 = new Button();
-    final Label lbl = new Label();
-
+    Label lbl = new Label();
+    
     primaryStage.setTitle("Hello World!");
     
     lbl.setText("Test");
@@ -37,9 +37,10 @@ public class Main extends Application {
     btn2.setText("bigger");
     
     btn.setOnAction(new EventHandler<ActionEvent>() {
-        @Override
+   	
+    	@Override
         public void handle(ActionEvent event) {  
-        	int size = 12; 
+    		int size = 14; 
         	lbl.setFont(new Font(size)); 
         }
       });
@@ -49,7 +50,6 @@ public class Main extends Application {
         public void handle(ActionEvent event) {  
         	int size = 20; 
         	lbl.setFont(new Font(size)); 
-        	
         }
       });
 
